@@ -1,6 +1,8 @@
-# Microsites-Python-Flask- 
+# FlaskProject-Micro
 A lightweight website based on Python + Flask
-/* !!!主要代码在Master分支!!!The main code is in the Master branch!!! */
+
+
+
 /* The English language in this document is machine translation, and the specific meaning is subject to Chinese */
 
 Now version 0.0.2

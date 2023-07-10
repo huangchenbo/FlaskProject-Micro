@@ -2,7 +2,7 @@
 # FlaskProject-Micro
 A lightweight website based on Python + Flask
 *****CODE IN MASTER*****
-
+<a href="https://github.com/huangchenbo/FlaskProject-Micro/tree/master">CLICK ME TO CODE</a>
 
 /* The English language in this document is machine translation, and the specific meaning is subject to Chinese */
 

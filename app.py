@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, make_response
 import JiamiChar
 import time
-import SQLCAOZUO
+#  import SQLCAOZUO
 
 
 app = Flask(__name__)

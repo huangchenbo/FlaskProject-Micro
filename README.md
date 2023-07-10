@@ -1,21 +1,21 @@
-*****CODE IN MASTER*****
+<p>*****CODE IN MASTER*****</p>
 # FlaskProject-Micro
 A lightweight website based on Python + Flask
-*****CODE IN MASTER*****
+*****CODE IN MASTER*****<br>
 <a href="https://github.com/huangchenbo/FlaskProject-Micro/tree/master">CLICK ME TO CODE</a>
-
+<br>
 /* The English language in this document is machine translation, and the specific meaning is subject to Chinese */
-
-Now version 0.0.2
+<ul>
+<i>Now version 0.0.2</i>
 Update:
-version 0.0.2:
-  界面大更新，更加的美观，删除了callme页面，改为聊天室(半成品，功能还没写完)
-  The interface has been greatly updated, more beautiful, the callme page has been deleted, and it has been changed to a chat room (semi-finished, the function has not yet been written)
+<li>version 0.0.2:</li>
+  <li>界面大更新，更加的美观，删除了callme页面，改为聊天室(半成品，功能还没写完)</li>
+  <li>The interface has been greatly updated, more beautiful, the callme page has been deleted, and it has been changed to a chat room (semi-finished, the function has not yet been written)</li>
 
-version 0.0.1:
-  没什么好说的，最初版本
-  Nothing to say, initial version
-
+<li>version 0.0.1:</li>
+  <li>没什么好说的，最初版本</li>
+  <li>Nothing to say, initial version</li>
+</ul>
 Chinese Text:
 此程序采用 Python + Flask + Jinja2;
 含有部分 HTML，CSS

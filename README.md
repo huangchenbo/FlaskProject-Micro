@@ -1,6 +1,7 @@
+*****CODE IN MASTER*****
 # FlaskProject-Micro
 A lightweight website based on Python + Flask
-
+*****CODE IN MASTER*****
 
 
 /* The English language in this document is machine translation, and the specific meaning is subject to Chinese */

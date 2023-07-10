@@ -7,7 +7,7 @@ A lightweight website based on Python + Flask
 /* The English language in this document is machine translation, and the specific meaning is subject to Chinese */
 <ul>
 <i>Now version 0.0.2</i>
-Update:
+<b>Update:</b>
 <li>version 0.0.2:</li>
   <li>界面大更新，更加的美观，删除了callme页面，改为聊天室(半成品，功能还没写完)</li>
   <li>The interface has been greatly updated, more beautiful, the callme page has been deleted, and it has been changed to a chat room (semi-finished, the function has not yet been written)</li>

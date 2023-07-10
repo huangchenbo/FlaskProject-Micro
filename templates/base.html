@@ -1,0 +1,25 @@
+
+<!--设置站点导航，顶部条幅-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/base_css.css">
+    {% block head %}{% endblock %}
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/" title="返回首页" id="zhuye" class="hvr-box-shadow-inset"><img src="/static/ICON/indexICON.png" alt="" class="ICON">主页</a></li>
+        <li><a href="/info" title="查看说明" id="jieshao" class="hvr-box-shadow-inset"><img src="/static/ICON/InfoICON.png" alt="" class="ICON">详情</a></li>
+        <li><a href="/download" title="下载整合包" id="xiazai" class="hvr-box-shadow-inset"><img src="/static/ICON/DownloadICON.png" alt="" class="ICON">下载</a></li>
+        <li><a href="/chatroom_login" title="聊天室" id="lianxiwomen" class="hvr-box-shadow-inset"><img src="/static/ICON/ChatICON.png" alt="" class="ICON">聊天室</a></li>
+    </ul>
+    <div id="maindiv">
+{% block body %}
+
+{% endblock %}
+    </div>
+</body>
+</html>

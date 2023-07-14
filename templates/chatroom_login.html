@@ -26,20 +26,24 @@
         {% elif login == 2%}
             <p style="position: relative;top: 0;left: 35%;font-weight: bold;">账号或密码错误</p>
         {% elif login == 3%}
-            <p style="position: relative;top: 0;left: 35%;font-weight: bold;">账号不存在</p>
+            <p style="position: relative;top: 0;left: 35%;font-weight: bold;">注册成功，请登入</p>
         {% endif %}
         <form action="" method="post">
             <br>
             <div  class="usernamebox">
-            <input type="text" placeholder="Username" name="username" class="logininputBox" ">
+            <input type="text" placeholder="Username" name="username" class="logininputBox">
             </div>
             <br>
             <div  class="passwordbox">
-            <input type="password" placeholder="Password" name="password" class="logininputBox" ">
+            <input type="password" placeholder="Password" name="password" class="logininputBox">
             </div>
             <br>
             <input type="submit" value="登入" class="btn">
         </form>
+        <button data-text="Awesome" class="regbutton" onclick='location.href=("chatroom_registered")'>
+            <span class="actual-text">&nbsp;register&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;register&nbsp;</span>
+        </button>
     </div>
 
 {% endblock %}

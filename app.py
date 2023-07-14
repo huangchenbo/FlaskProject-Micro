@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template, request, session
 from flask_sqlalchemy import SQLAlchemy
 import JiamiChar
 import time
@@ -6,10 +6,11 @@ import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@127.0.0.1:3306/flasksql?charset=utf8mb4'
+app.config['SECRET_KEY'] = 'FLASKSQLANDCHAT'
 db = SQLAlchemy(app)
 nowpage = ''
 cookies = ''
-login = 0  # 0=未登入 1=登入成功 2=账号或密码错误 3=注册成功，请登入
+login = 0  # 0=未登入 2=账号或密码错误 3=注册成功，请登入
 reg = 0  # 0=None 1=账号已存在
 
 
@@ -36,6 +37,7 @@ def IndexHtml():
     return render_template('index.html', nowpage=nowpage)
 
 
+
 @app.route('/info')
 def info():
     nowpage = 'info'
@@ -57,7 +59,8 @@ def chatroom_login():
         login_user = User.query.filter_by(username=a['username'], password=a['password'])
         if login_user.first() is not None:
             # 登入成功
-            return "欢迎用户：" + login_user[0].username + "登入访问"
+            session['username'] = login_user[0].username
+            return app.redirect('chatroom')
         else:
             return render_template('chatroom_login.html', nowpage=nowpage, login=2)
     else:
@@ -84,7 +87,10 @@ def chatroom_reg():
 @app.route('/chatroom', methods=['POST', 'GET'])
 def chatroom():
     nowpage = 'chatroom'
-    return render_template('chatroom.html', nowpage=nowpage, login=login)
+    if session.get('username') is  None:
+        return render_template('chatroom.html', nowpage=nowpage, login=login)
+    else:
+        return render_template('chatroom.html', nowpage=nowpage)
 
 
 if __name__ == '__main__':

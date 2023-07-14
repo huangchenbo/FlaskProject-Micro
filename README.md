@@ -6,8 +6,12 @@ A lightweight website based on Python + Flask
 <br>
 /* The English language in this document is machine translation, and the specific meaning is subject to Chinese */
 <ul>
-<i>Now version 0.0.2</i>
+<i>Now version 0.0.3</i>
 <b>Update:</b>
+<li>version 0.03</li>
+  <li>增加了注册界面，以及完成了用户的注册与登入功能，采用了MySQL数据库</li>
+  <li>The registration interface was added, and the user registration and login functions were completed, and the MySQL database was adopted</li>
+  
 <li>version 0.0.2:</li>
   <li>界面大更新，更加的美观，删除了callme页面，改为聊天室(半成品，功能还没写完)</li>
   <li>The interface has been greatly updated, more beautiful, the callme page has been deleted, and it has been changed to a chat room (semi-finished, the function has not yet been written)</li>
